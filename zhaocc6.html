@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 align="center">注册用户表单设计</h1>
+<div style="margin:0 auto;width:50%">
+	<form method="post" action="ok.html">
+	<fieldset>
+		<legend>基本信息</legend>
+		<label for="username">用户名:</label>
+		<input type="text" name="username" required  placeholder="用户名长度20字符以内" autofocus />
+		<br />
+		<label for="password">密码:</label>
+		<input type="password" name="password" required />
+		<br />
+		<label for="sex">性别:</label>
+		<input type="radio" name="sex" value="famale" />男
+		<input type="radio" name="sex" value="male" />女
+		<br />
+		<label for="hobby">爱好:</label>
+		<input type="checkbox" name="hobby" value="sing" />音乐
+		<input type="checkbox" name="hobby" value="dance" />舞蹈
+		<input type="checkbox" name="hobby" value="sport" />运动
+		<br />
+		<label for="jg">籍贯:</label>
+		<select name="jg">
+			<optgroup label="河北省">
+				<option value="sjz">石家庄市</option>
+				<option value="ts">唐山市</option>
+				<option value="qhd">秦皇岛市</option>
+				<option value="hd">邯郸市</option>
+				<option value="xt">邢台市</option>
+				<option value="bd">保定市</option>
+				<option value="zjk">张家口市</option>
+				<option value="cd">承德市</option>
+				<option value="cz">沧州市</option>
+				<option value="lf">廊坊市</option>
+				<option value="hs">衡水市</option>
+			</optgroup>
+		</select><br />
+		<label>上传照片:</lablel><input type="file"><br />
+		<label>个人介绍:</label>
+		<textarea cols="20" rows="10">请输入个人基本情况</textarea>
+	</fieldset>	
+
+	<fieldset>
+		<legend>高级信息</legend>
+		<label for="homepage">个人主页:</label>
+		<input type="url" name="homepage" /><br />
+		<label for="email_name">电子邮箱:</label>
+		<input type="email" name="email_name" /><br />
+		<label for="Date_name">毕业日期:</label>
+		<input type="Date" name="Date_name" /><br />
+		<label for="age">你的年龄:</label>
+		<input type="number" name="age" min="18" max="70" value="20" /><br />
+		<label for="">你的身高:</label>
+		150cm<input type="range" min="150" max="200" />200cm<br />
+		<label for="color">你喜欢的颜色:</label>
+		<input type="color" name="color" /><br />
+		<label for="phoneNumber">你的手机号码:</label>
+		<input type="tel" name="phoneNumber" /><br />
+		</fieldset>
+		<div align="center">
+			<input type="submit">
+			<input type="reset">
+		</div>
+		
+	</form>
+</div>
+</body>
+</html>
