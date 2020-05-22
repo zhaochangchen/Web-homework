@@ -1,16 +1,18 @@
-* {
+/* {
 	margin: 0;
 	border: 0;
 	background-color: #a7d1ea;
-}
+}*/
 
-.div2_img_c img {/*设置图片大小*/
+.play img {
+	/*设置图片大小*/
 	float: left;
 	width: 690px;
 	height: 460px;
 }
 
-.div1_c {/*显示图片的地方，图片条轮流经过这*/
+.frame {
+	/*显示图片的地方，图片条轮流经过这*/
 	position: relative;
 	margin: 0 auto;
 	width: 690px;
@@ -18,29 +20,50 @@
 	overflow: hidden;
 	border-radius: 10px;
 }
-.div2_img_c {/*设置整体图片条宽度和动画效果*/
+
+.play {
+	/*设置整体图片条宽度和动画效果*/
 	width: calc(690px *5);
 	height: 460px;
+	position: absolute;
 	animation: zhuan 15s infinite alternate;
 }
+
 @keyframes zhuan {
-	0% ,20%  {margin-left: 0px;    }
-	25% ,40% {margin-left: -690px; }
-	45% ,60% {margin-left: -1380px;}
-	65% ,80% {margin-left: -2070px;}
-	85% ,100%{margin-left: -2760px;}
+
+	0%,
+	20% {
+		margin-left: 0px;
+	}
+
+	25%,
+	40% {
+		margin-left: -690px;
+	}
+
+	45%,
+	60% {
+		margin-left: -1380px;
+	}
+
+	65%,
+	80% {
+		margin-left: -2070px;
+	}
+
+	85%,
+	100% {
+		margin-left: -2760px;
+	}
 }
 
 img {
+	/*以下是导航条部分*/
 	width: 100px;
-	height: 100px; 
+	height: 100px;
 }
-.div1_dhl_c {
-	position: relative;
-	margin: 0 auto;
-	width: 690px;
-}
-.div1_dhl_c a {
+
+a {
 	float: left;
 	display: inline-block;
 	width: 100px;
@@ -49,17 +72,67 @@ img {
 	margin-right: 19px;
 	margin-top: 10px;
 	border-radius: 100%;
-	overflow:hidden;
+	overflow: hidden;
 }
 
-#div1_dhl1_d:hover ~ #div1_dhl_d{animation: zhuan1 2s ease-out forwards;}
-#div1_dhl2_d:hover ~ #div1_dhl_d{animation: zhuan2 2s ease-out forwards;}
-#div1_dhl3_d:hover ~ #div1_dhl_d{animation: zhuan3 2s ease-out forwards;}
-#div1_dhl4_d:hover ~ #div1_dhl_d{animation: zhuan4 2s ease-out forwards;}
-#div1_dhl5_d:hover ~ #div1_dhl_d{animation: zhuan5 2s ease-out forwards;}
+#player {
+	/*warning:如果想要把这个元素下面包含的子元素居中对齐要设置宽度*/
+	margin: 0 auto;
+	position: relative;
+	width: 690px;
+}
+/*想添加鼠标到哪就显示那张图片的效果*/
+#a1:hover~#photos {
+	animation: zhuan1 .2s ease-out forwards;
+}
 
-@keyframes zhuan1 {0%{margin-left: -2670px;}100%{margin-left: 0px;}}
-@keyframes zhuan2 {0%{margin-left: -2670px;}100%{margin-left: -690px;}}
-@keyframes zhuan3 {100%{margin-left: -1380px;}}
-@keyframes zhuan4 {100%{margin-left: 2070px;}}
-@keyframes zhuan5 {100%{margin-left: -2670px;}}
+#a2:hover~#photos {
+	animation: zhuan2 .2s ease-out forwards;
+}
+#a3:hover~#photos {
+	animation: zhuan3 .2s ease-out forwards;
+}
+
+#a4:hover~#photos {
+	animation: zhuan4 .2s ease-out forwards;
+}
+
+#a5:hover~#photos {
+	animation: zhuan5 .2s ease-out forwards;
+}
+@keyframes zhuan1 {
+	0% {
+		margin-left: -2760px
+	}
+
+	100% {
+		margin-left: 0px;
+	}
+}
+
+@keyframes zhuan2 {
+	0% {
+		margin: -2760px;
+	}
+	100% {
+		margin-left: -690px;
+	}
+}
+
+@keyframes zhuan3 {
+	100% {
+		margin-left: -1380px;
+	}
+}
+
+@keyframes zhuan4 {
+	100% {
+		margin-left: -2070px;
+	}
+}
+
+@keyframes zhuan5 {
+	100% {
+		margin-left: -2760px;
+	}
+}

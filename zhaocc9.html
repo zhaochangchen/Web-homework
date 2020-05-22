@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实验九</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			background: url(img/starsky.jpg) no-repeat;
+			background-size: cover;
+		}
+
+		.table {
+			background-color: rgba(255,255,255,0.1);
+			margin: 100px auto;
+		}
+
+		.table tr td {
+			font-size: 25px;
+			font-family: Arial,Helvetica,sans-serif;
+			color: white;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.tou{
+			text-align: right;
+		}		
+
+		.table td input {
+			border-radius: 5px;
+			text-indent: 10px;
+			background-color: rgba(255,255,255,0.1);
+			height: 30px;
+			border: none;
+			color: white;
+		}
+		
+		.AnNiu{
+			text-align: center;
+			height: 30px;
+			width: 160px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<form method="post" action="ok.html">
+		<fieldset>
+			<table align="center" class="table">
+				<tr>
+					<td class="tou"><label for="username">用户名</label></td>
+					<td><input type="text" name="username" placeholder="用户名" id="username"></td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="password">密码</label></td>
+					<td><input type="password" name="password" placeholder="密码" id="password"></td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="sex">性别</label></td>
+					<td><input type="radio" name="sex" value="famale" id="famale" /><label for="famale">男</label>
+						<input type="radio" name="sex" value="male" id="male" /><label for="male">女</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="tou"><label>爱好</label></td>
+					<td ><input type="checkbox" name="sing" value="sing" id="sing"/><label for="sing">音乐</label>
+						<input type="checkbox" name="dance" value="dance" id="dance" /><label for="dance">舞蹈</label>
+						<input type="checkbox" name="sport" value="sport" id="sport" /><label for="sport">运动</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="JvZhuDi">居住地</label></td>
+					<td><select name="JvZhuDi" id="JvZhuDi">
+							<optgroup label="河北省">
+								<option value="sjz">石家庄市</option>
+								<option value="ts">唐山市</option>
+								<option value="qhd">秦皇岛市</option>
+								<option value="hd">邯郸市</option>
+								<option value="xt">邢台市</option>
+								<option value="bd">保定市</option>
+								<option value="zjk">张家口市</option>
+								<option value="cd">承德市</option>
+								<option value="cz">沧州市</option>
+								<option value="lf">廊坊市</option>
+								<option value="hs">衡水市</option>
+							</optgroup>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="photo">上传照片</label></td>
+					<td><input type="file" name="photo" id="photo"></td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="JieShao">一句话介绍自己</label></td>
+					<td><input type="text" name="JieShao" id="JieShao" /></td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="homepage">个人主页</label></td>
+					<td><input type="url" name="homepage" id="homepage" /></td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="email_name">电子邮箱</label></td>
+					<td><input type="email" name="email_name" id="email_name" /></td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="Date_name">毕业日期</label></td>
+					<td><input type="Date" name="Date_name" id="Date_name" /></td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="age">你的年龄</label></td>
+					<td><input type="number" name="age" id="age" min="18" max="70" value="20" /></td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="">你的身高</label></td>
+					<td>150cm<input type="range" min="150" max="200" />200cm</td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="color">你喜欢的颜色</label></td>
+					<td><input type="color" name="color" id="color" /></td>
+				</tr>
+				<tr>
+					<td class="tou"><label for="phoneNumber"></label>手机号码</td>
+					<td><input type="tel" name="phoneNumber" id="phoneNumber" /></td>
+				</tr>
+				<tr>
+					<td ><input type="submit" value="提交" class="AnNiu"></td>
+					<td ><input type="reset" value="重置" class="AnNiu"></td>
+				</tr>
+			</table>
+		</fieldset>
+	</div>
+</body>
+</html>

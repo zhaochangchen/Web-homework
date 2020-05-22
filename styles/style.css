@@ -1,0 +1,45 @@
+body{
+	font-family: 'Monaco';
+}
+
+h3.one{
+	line-height: 10px;
+	font-size: 50px;
+	margin-bottom: 75px;
+}
+
+div.one{
+	padding: 0 50px 0px 50px;
+	text-align: left;
+	line-height: 10px;
+	font-size: 30px;
+	margin-bottom: 35px;
+}
+
+h1.seven{
+	margin: 0 0px 0px 0px;
+}
+
+a:link {
+	text-decoration: none;
+	color: blue;
+}
+
+a:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+a:active {
+	text-decoration: none;
+	color: red;
+}
+
+html,body{
+	height: 100%
+}
