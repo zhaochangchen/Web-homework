@@ -1,0 +1,127 @@
+/*通配选择*/
+html,body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+table{
+    display: inline-block;
+}
+a{
+    display: inline-block;
+}
+.hang2{
+    display: inline-block;
+}
+img{
+    display:inline-block;
+    width: 100%;
+    height: auto;
+}
+/*头部*/
+#top {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    background: #42bd55;
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+#sousuolan {
+    justify-content: center;
+    border: 1px solid #42bd55;
+    border-radius: 10px;
+}
+table{
+    background: white;
+    margin: 0 auto;
+}
+#sousuolan img{
+    width: 16px;
+    height: 16px;
+}
+/*脖子*/
+#bozi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 0;
+}
+#bozi a{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#bozi a:active{
+    border-bottom: 3px solid #42bd55;
+}
+/*内容*/
+#main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.hang1 table tr td a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-bottom: 5px;
+}
+.hang2 {
+    background: #f7f7f9;
+    border-radius: 5px;
+    color: #69bc76;
+    margin-bottom: 5px;
+}
+.hang2 img{
+    width: 17.6px;
+    height: 17.6px;
+    margin-right: 5px;
+}
+.hang4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.hang4 .img1,.hang4 .img2,.hang4 .img3{
+    width: 33%;
+    margin-left: 1px;
+}
+.hang5{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.icon1,.icon2,.icon3{
+    width: 33%;
+}
+.hang5 a img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+/*底部*/
+#foot{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 0;
+    background: white;
+}
+#dhl1,#dhl2,#dhl3,#dhl4,#dhl5{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+#dhl1 img,#dhl2 img,#dhl3 img, #dhl4 img,#dhl5 img{
+    justify-content: center;
+    width: 40px;
+}
