@@ -1,135 +1,190 @@
-		* {
-			margin: 0;
-			border: 0;
-			padding: 0;
-		}
+/*通配选择*/
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;	
+}
 
-		#top1 {
-			width: 100%;
-			height: 30px;
-			background-color: #545652;
-		}
+ul {
+	list-style: none;
+}
 
-		#top1 ul li {
-			list-style: none;
-			float: left;
-			padding: 0 0 0 20px;
-			line-height: 30px;
-			font-size: 15px;
-		}
+a{
+	text-decoration: none;
+}
 
-		#top1 ul li a:link,
-		#top1 ul li a:visited,
-		#top1 ul li a:hover,
-		#top1 ul li a:active {
-			text-decoration: none;
-			color: #d5d5d5;
-		}
+/*banner*/
+#banner {
+	width: 100%;
+	height: 100px;
+	background-color: #edf4ed;
+	color: #2e963d;
+	font-family: 微软雅黑;
+	font-size: 25px;
+	line-height: 100px;
+}
 
-		#top2 {
-			width: 100%;
-			height: 50px;
-			background-color: #edf4ed;
-			color: #2e963d;
-			font-family: 微软雅黑;
-			font-size: 25px;
-			line-height: 50px;
-			text-indent: 10%;
-		}
+/*每个实验报告框的具体样式*/
+#main li{
+	float: left;
+}
 
-		h1 {
-			margin:50px 0 0 120px;
-		}
+#main li a {
+	display: block;
+	width: 158px;
+	height: 108px;
+	padding: 20px;
+}
 
-		#out {
-			width: 100%;
-			padding: 0 auto;
-		}
+#main a:link,
+#main a:visited {
+	text-decoration: none;
+	border: solid 1px #e2e2e2;
+	color: #3377aa;
+}
 
-		.content {
-			float: left;
-			/*position: relative;*/
-		}
-		
-		.kuang {
-			float: left;
-			margin: 10px 0 0 0;
-		}
+#main a:hover,
+#main a:active {
+	text-decoration: none;
+	border: solid 1px #3377aa;
+}
 
-		#kuang1 {
-			margin-left: 100px;
-		}
+#main span{
+	display: block;
+	text-align: center;
+}
 
-		.kuang ul li {
-			width: 200px;
-			height: 150px;
-			margin: 20px;
-			list-style: none;
-			/*border-style: solid;
-			border-width: 1px;
-			border-color: #e2e2e2;*/
-			/*padding: 20px;*/
-		}
+.r1{
+	margin-top: 10px;
+	font-size: 15px;
+	color: #3377aa;
+}
 
-		.kuang ul li a {
-			display: block;
-			width: 158px;
-			height: 108px;
-			padding: 20px;
-			
-		}
+.r2{
+	text-align: center;
+	border: solid 1px #3ba94d;
+	margin: 30px 40px 26px 40px;
+	font-size: 13px;
+	line-height: 1;
+	color: #3ba94d;
+	border-radius: 2px;
+	padding: 5px 12px;
+}
 
-		.kuang ul li a:link,
-		.kuang ul li a:visited {
-			text-decoration: none;
-			border: solid 1px #e2e2e2;
-			color: #3377aa;
-		}
-		
-		.kuang ul li a:hover,
-		.kuang ul li a:active {
-			text-decoration: none;
-			border: solid 1px #3377aa;
-		}
+/*右侧内容超链接*/
+#two a:link,
+#two a:visited,
+#two a:hover,
+#two a:active {
+	color: #3377aa;
+	text-decoration: none;
+}
 
-		span {
-			display: block;
-			text-align: center;
-		}
+@media (min-width:1025px) {
+	/*内容部分总体布局*/
+	#content {
+		width: 100%;
+		padding: 0 auto;
+	}
 
-		.l1 {
-			font-size: 15px;
-			color: #3377aa;
-		}
+	#one {
+		width: 60%;
+	}
 
-		.l2 {
+	#two {
+		width: 40%;
+	}
 
-		}
+	.content {
+		float: left;
+	}
 
-		.l3 {
-			display: inline-block;
-			text-align: center;
-			border: solid 1px #3ba94d;
-			margin: 45px 40px;
-    		font-size: 13px;
-    		line-height: 1;
-    		color: #3ba94d;
-    		border-radius: 2px;
-    		padding: 5px 12px;
-		}
-		
-		#one {
-			width: 60%;
-		}
+	#main li {
+		width: 30%;
+		height: 40%;
+		margin-left: 3%;
+		margin-top: 2%;
+	}
+	/*下面这两属性为了不使右边的超链接和左侧内容重叠*/
+	#two {
+		margin-top: 20px;
+	}
 
-		#two {
-			width: 40%;
-		}
+	#two a {
+		margin-left: 20px;
+	}
+}
 
-		#two a:link,
-		#two a:visited,
-		#two a:hover,
-		#two a:active {
-			color: #3377aa;
-			text-decoration: none;
-		}
+@media (max-width: 1024px) and (min-width:401px) {
+	#one {
+		width: 100%;
+		height: 500px;
+	}
+
+	#main li {
+		width: 45%;
+		height: 40%;
+		margin-right: 1%;
+		margin-left: 1%;
+		margin-top: 2%;
+	}
+
+	#two {
+		margin-top: 30px;
+		margin-left: 2%;
+		clear: both;
+		float: top;
+	}
+
+	#two a{
+		display: block;
+		width: 108px;
+		height: 61px;
+		line-height: 61px;
+		text-align: center;
+		margin: 5px;
+		background-color: #edf4ed;
+		color: #2e963d;
+	}
+	#two a:link,
+	#two a:visited,
+	#two a:hover,
+	#two a:active {
+		color: #2e963d;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 400px) {
+	#main li {
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-bottom: 2%;
+	}
+
+	#two {
+			margin-top: 75px;
+			margin-left: 2%;
+			clear: both;
+	}
+
+	#two a{
+		display: block;
+		width: 108px;
+		height: 61px;
+		line-height: 61px;
+		text-align: center;
+		margin: 15px;
+		background-color: #edf4ed;
+		color: #2e963d;
+	}
+
+	#two a:link,
+	#two a:visited,
+	#two a:hover,
+	#two a:active {
+		color: #2e963d;
+		text-decoration: none;
+	}
+}
